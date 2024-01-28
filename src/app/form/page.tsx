@@ -51,7 +51,7 @@ const formSchema = z
     }
   )
 
-export default function Home() {
+export default function FormShadcnUI() {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
